@@ -65,26 +65,8 @@ public class ChunkDecoratorOverworldMixin {
 		int i14;
 		int treeDensity;
 
-		double d = 0.5;
-		k4 = (int)((this.treeDensityNoise.get((double)x * d, (double)z * d) / 8.0 + rand.nextDouble() * 4.0 + 4.0) / 3.0);
-		treeDensity = 0;
-
 		if (biome == BBMRBiomes.INFDEV_FOREST) {
-			treeDensity += k4 + 5;
 
-			try {
-				BlockLogicLeavesBase.enableDecay = false;
-
-				for(i11 = 0; i11 < treeDensity; ++i11) {
-					i11 = x + rand.nextInt(16) + 8;
-					l14 = z + rand.nextInt(16) + 8;
-					WorldFeature feature = biome.getRandomWorldGenForTrees(rand);
-					feature.init(1.0, 1.0, 1.0);
-					feature.place(this.world, rand, i11, this.world.getHeightValue(i11, l14), l14);
-				}
-			} finally {
-				BlockLogicLeavesBase.enableDecay = true;
-			}
 
 			if (rand.nextInt(96) == 0){
 				k7 = x + rand.nextInt(16) + 8;
@@ -93,7 +75,7 @@ public class ChunkDecoratorOverworldMixin {
 				new WorldFeatureIndevHouse().place(world, world.rand, k7, k4, treeDensity);
 			}
 
-			if (rand.nextInt(128) == 0){
+			if (rand.nextInt(96) == 0){
 				k7 = x + rand.nextInt(16) + 8;
 				treeDensity = z + rand.nextInt(16) + 8;
 				k4 = this.world.getHeightValue(k7, treeDensity);

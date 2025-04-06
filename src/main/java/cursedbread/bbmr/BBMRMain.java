@@ -1,5 +1,6 @@
 package cursedbread.bbmr;
 
+import cursedbread.bbmr.biomes.BBMRBiomes;
 import cursedbread.bbmr.blocks.BBMRBlocks;
 import cursedbread.bbmr.items.BBMRItems;
 import net.fabricmc.api.ClientModInitializer;
@@ -33,6 +34,7 @@ public class BBMRMain implements ModInitializer, GameStartEntrypoint, ClientModI
 		LOGGER.info("New Biomes");
 		new BBMRBlocks().initilizeBlocks();
 		new BBMRItems().initilizeItems();
+		new BBMRBiomes().initilixeBiomes();
 	}
 
 	@Override

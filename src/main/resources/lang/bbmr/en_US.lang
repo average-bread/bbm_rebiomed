@@ -1,0 +1,22 @@
+biome.bbmr.infdev.forest=Infdev Forest
+
+tile.bbmr.cobble.stone.retro.name=Retro Cobble Stone
+tile.bbmr.cobble.stone.retro.desc=Stone smashed apart and reconstituted. Smells old.
+tile.bbmr.cobble.stone.mossy.retro.name=Retro Cobble Stone Mossy
+tile.bbmr.cobble.stone.mossy.retro.desc=Retro cobblestone with added greenery. Smells old.
+tile.bbmr.brick.clay.retro.name=Retro Brick Clay
+tile.bbmr.brick.clay.retro.desc=Stacked bricks of baked clay. Smells old.
+tile.bbmr.flower.cyan.retro.name=Cyan Rose
+tile.bbmr.flower.cyan.retro.desc=An old cyan flower.
+tile.bbmr.stone.retro.name=Retro Stone
+tile.bbmr.stone.retro.desc=Block of solid stone. Smells old...and badly textured.
+tile.bbmr.slab.cobble.stone.retro.name=Retro Cobble Stone Slab
+tile.bbmr.slab.cobble.stone.retro.desc=A slab of cobblestone. Smells old.
+tile.bbmr.stairs.cobble.stone.retro.name=Retro Cobble Stone Stairs
+tile.bbmr.stairs.cobble.stone.retro.desc=Cobblestone block used for rapid vertical movement. Smells old.
+tile.bbmr.stone.bricks.retro.name=Retro tone Bricks
+tile.bbmr.stone.bricks.retro.desc=Stacked bricks of stone. Smells old.
+tile.bbmr.slab.stone.bricks.retro.name=Retro tone Bricks Slab
+tile.bbmr.slab.stone.bricks.retro.desc=A slab of stone bricks. Smells old.
+tile.bbmr.stairs.stone.bricks.retro.name=Retro tone Bricks Stairs
+tile.bbmr.stairs.stone.bricks.retro.desc=Stone brick block used for rapid vertical movement. Smells old.

@@ -52,5 +52,9 @@ public class BBMRCrafts implements RecipeEntrypoint {
 		RecipeBuilder.Shapeless(BBMRMain.MOD_ID)
 			.addInput(BBMRBlocks.FLOWER_CYAN_RETRO)
 			.create("cyandyecraft", new ItemStack(Items.DYE, 2, 6));
+
+		RecipeBuilder.Furnace(BBMRMain.MOD_ID)
+			.setInput(BBMRBlocks.COBBLE_STONE_RETRO)
+			.create("retrosmelting", new ItemStack(BBMRBlocks.STONE_RETRO));
 	}
 }

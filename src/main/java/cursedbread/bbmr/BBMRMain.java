@@ -2,6 +2,7 @@ package cursedbread.bbmr;
 
 import cursedbread.bbmr.biomes.BBMRBiomes;
 import cursedbread.bbmr.blocks.BBMRBlocks;
+import cursedbread.bbmr.entities.BBMREntities;
 import cursedbread.bbmr.items.BBMRItems;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
@@ -22,11 +23,13 @@ public class BBMRMain implements ModInitializer, GameStartEntrypoint, ClientModI
 		Properties prop = new Properties();
 		prop.setProperty("starting_block_id","2200");
 		prop.setProperty("starting_item_id","17890");
+		//prop.setProperty("starting_entity_id","634");
 
 		ConfigHandler config = new ConfigHandler(MOD_ID,prop);
 
 		BBMRBlocks.blockId = config.getInt("starting_block_id");
 		BBMRItems.itemId = config.getInt("starting_item_id");
+		//BBMREntities.entityId = config.getInt("starting_entity_id");
 	}
 
 	@Override
@@ -35,6 +38,7 @@ public class BBMRMain implements ModInitializer, GameStartEntrypoint, ClientModI
 		new BBMRBlocks().initilizeBlocks();
 		new BBMRItems().initilizeItems();
 		new BBMRBiomes().initilixeBiomes();
+		//new BBMREntities().initilizeEntities();
 	}
 
 	@Override

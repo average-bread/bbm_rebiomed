@@ -95,7 +95,7 @@ public class BBMRBlocks {
 			.withTags(new Tag[]{BlockTags.MINEABLE_BY_PICKAXE});
 
 		STAIR_COBBLE_STONE_RETRO  = new BlockBuilder(BBMRMain.MOD_ID)
-			.build("stairs.stone.bricks.retro",
+			.build("stairs.cobble.stone.retro",
 				blockId++, (b) -> {
 					return new BlockLogicStairs(b, COBBLE_STONE_RETRO);
 				})
@@ -105,7 +105,7 @@ public class BBMRBlocks {
 			.withTags(new Tag[]{BlockTags.MINEABLE_BY_PICKAXE});
 
 		STAIR_STONE_BRICKS_RETRO  = new BlockBuilder(BBMRMain.MOD_ID)
-			.build("stairs.cobble.stone.retro",
+			.build("stairs.stone.bricks.retro",
 				blockId++, (b) -> {
 					return new BlockLogicStairs(b, STONE_BRICKS_RETRO);
 				})

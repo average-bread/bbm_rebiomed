@@ -1,13 +1,20 @@
 package cursedbread.bbmr;
 
 import cursedbread.bbmr.blocks.BBMRBlocks;
+import cursedbread.bbmr.entities.EntitySteve;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.EntityRenderDispatcher;
 import net.minecraft.client.render.TileEntityRenderDispatcher;
 import net.minecraft.client.render.block.color.BlockColorDispatcher;
 import net.minecraft.client.render.block.model.*;
+import net.minecraft.client.render.entity.MobRenderer;
+import net.minecraft.client.render.entity.MobRendererBiped;
+import net.minecraft.client.render.entity.MobRendererHuman;
 import net.minecraft.client.render.item.model.ItemModelDispatcher;
+import net.minecraft.client.render.model.ModelBiped;
+import net.minecraft.client.render.model.ModelPlayer;
+import net.minecraft.client.render.model.ModelZombie;
 import net.minecraft.core.util.helper.Side;
 import turniplabs.halplibe.helper.ModelHelper;
 import turniplabs.halplibe.util.ModelEntrypoint;
@@ -84,7 +91,7 @@ public class BBMRModels implements ModelEntrypoint {
 
 	@Override
 	public void initEntityModels(EntityRenderDispatcher dispatcher) {
-
+		ModelHelper.setEntityModel(EntitySteve.class, ()->new MobRendererBiped<>(new ModelPlayer(0), 0.5f));
 	}
 
 	@Override
